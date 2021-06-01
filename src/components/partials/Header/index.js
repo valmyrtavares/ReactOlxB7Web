@@ -2,7 +2,11 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import {HeaderArea} from './styled';
 
+import {isLogged} from '../../../helpers/AuthHandler'
+
 const Header = () => {
+    let logged = isLogged();
+
     return(
         <HeaderArea>
             <div className={'container'}>
@@ -15,15 +19,32 @@ const Header = () => {
                     </div>                
                 <nav>
                     <ul>
-                        <li>
-                            <Link to="">Login</Link>
-                        </li>
-                        <li>
-                            <Link to="">Cadastrar</Link>
-                        </li>
-                        <li>
-                            <Link className="button" to="">Poste um anuncio</Link>
-                        </li>
+                        {logged &&
+                            <>
+                                <li>
+                                    <Link to="/my-acconunt">Minha conta</Link>
+                                </li>
+                                <li>
+                                    <Link to="/logout">Sair</Link>
+                                </li>
+                                <li>
+                                    <Link to="/post-an-ad" className="button" to="">Poste um anuncio</Link>
+                                </li>
+                            </>
+                        }
+                        {!logged &&
+                            <>
+                                <li>
+                                    <Link to="/signin">Login</Link>
+                                </li>
+                                <li>
+                                    <Link to="/signup">Cadastrar</Link>
+                                </li>
+                                <li>
+                                    <Link to="/signin" className="button" to="">Poste um anuncio</Link>
+                                </li>
+                            </>
+                        }              
                     </ul>
                 </nav>
             </div>
@@ -32,3 +53,4 @@ const Header = () => {
 }
 
 export default Header;
+                       

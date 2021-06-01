@@ -1,1 +1,2 @@
-Continuando agora com hover e acrescentando o & dentro do style
+Foi instalado o js-cookie com sérias vunerabilidades que eu não sei ainda porque acontece e fiz um helpers/AuthHandler que faz o 
+trabalho do cookie ele é importado no index do Header e faz o trabalho trazendo se o isLogged esta´ou não logado e para cada situação ele mostra botões específicos. Muito legal. Tudo funcionando
