@@ -1,2 +1,1 @@
-Foi instalado o js-cookie com sérias vunerabilidades que eu não sei ainda porque acontece e fiz um helpers/AuthHandler que faz o 
-trabalho do cookie ele é importado no index do Header e faz o trabalho trazendo se o isLogged esta´ou não logado e para cada situação ele mostra botões específicos. Muito legal. Tudo funcionando
+Foi criada uma rota e uma page de págna não encontrada e a rota é a última, ou seja, quando denhuma das rotas atende ao link ela cai na rota não encontrada
