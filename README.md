@@ -1,1 +1,3 @@
-O projeto continua com estruturas novas. O footer e o header são colocados dentro de partials como se fosse em Node e os arquivos principais tem sempre o nome de index.js. Foi importado o styled-component e foi colocado em um arquivo fora. Eu não acho isso uma boa ideia. Eu colocaria o style dentro do js e o chamaria pelo nome de Header ou Footer. Porque depois esse monte de index.vai dar rolo. Nem preciso dizer que o styled foi instalado e apesar de muito ter sido escrito, neese commit tudo é muito trivial e fácil de se enteder bantendo o olho. É como eu vejo.
+Nesse commit é implementado um arquivo que eu tinha deletado que é o App.css
+Eu o recriei e coloquei algumas funcionalidades que estão já refletindo dentro do projto
+Uma atenção só para a fonte de google que está sendo carregada a partir desse css
