@@ -1,3 +1,2 @@
-Nesse commit é implementado um arquivo que eu tinha deletado que é o App.css
-Eu o recriei e coloquei algumas funcionalidades que estão já refletindo dentro do projto
-Uma atenção só para a fonte de google que está sendo carregada a partir desse css
+Foi criado o Header de uma forma que vale a pena olhar com carinho. A forma como a estilização é feita usando classes
+e chaves dentro de chaves. Bem interessante. Na verdade é uma aula de html css implementado dentro de react. Mas bem simple e sem erros, tudo funcionando
