@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {HeaderArea} from './styled';
 
 import {isLogged} from '../../../helpers/AuthHandler'
-import NotFound from  '../../../pages/NotFound'
+
 
 const Header = () => {
     let logged = isLogged();

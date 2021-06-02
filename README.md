@@ -1,1 +1,1 @@
-Foi criada uma rota e uma page de págna não encontrada e a rota é a última, ou seja, quando denhuma das rotas atende ao link ela cai na rota não encontrada
+Uma puta aula de estilização com react. E com essa biblioteca styled, muito interessante, foi feito a contrução da tela de login, com várias features com hover focus, muito elegante. Eu só acho que o tamanho das fontes estão pequenos, mas um detalhe. Tudo sendo usado com componentização. É o uso da ferramenta, a prática da farrementa que vale. Uma puta aula. Contrução da pagina de login

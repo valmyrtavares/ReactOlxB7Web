@@ -4,6 +4,7 @@ import Home from './pages/home'
 import Sobre from './pages/about'
 
 import NotFound from  './pages/NotFound'
+import SingiIn from './pages/SingIn/index'
 
 
 export default () => {
@@ -14,6 +15,9 @@ export default () => {
             </Route>
             <Route exact path="/about">
                 <Sobre/>
+            </Route>
+            <Route exact path="/signin">
+                <SingiIn/>
             </Route>
             <Route>
                 <NotFound/>
