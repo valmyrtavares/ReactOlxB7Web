@@ -1,3 +1,3 @@
-Essa é a aula 13 que está estruturando para que a página de login mande os dados e faça a sua parte. Eu acho que é em duas aulas essa feature,  porque a minha aplicação parou de funcionar e ele na aula também parou de mostrar o site funcionando. Nesse exato momento na minha aplicação tem um erro dizendo que o rememberPassword não está definido, na linha 26. Aqui como dizia o Evandro eu dei uma brizada, muitas coisas novas, umas que eu já saibia mas combinadas e outras que eu sei mais ou menos e que quando combinam ficam meio confusas, mas eu acho que está chegando o momento de refatorara o código ou até mesmo voltar ao back que eu deixei pela metade antes do curso de React. Cobre a cabeça para descobre os pes.
-Vamos ver vou dar commit assim mesmo
+Agora foi resolvido o erro da aula anterior faltava o useState com a aquela variável e tudo está funcionando
+Um destaque dessa aula é o uso do ErrorMessage de fato um pérola de reuso de código. Até aqui foi foi incrementado apenas o tela de login e a API está retornando por enquanto apenas uma mensagem de erro. 
 

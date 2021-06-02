@@ -3,7 +3,7 @@ const OlxAPI = {
 
     login:async(email, password) => {
         //fazer consulta ao wb
-        return{};
+        return{error:"Funcionalidade incompleta"};
     }
 }
 

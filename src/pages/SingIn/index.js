@@ -3,14 +3,14 @@ import {PageArea} from './styled'
 import useAPI from '../../helpers/OlxAPI'
 import {doLogin} from '../../helpers/AuthHandler'
 
-import {PageContainer, PageTitle} from '../../components/MainComponents';
+import {PageContainer, PageTitle, ErrorMessage} from '../../components/MainComponents';
 
 const Page = () => {
     const api = useAPI();
 
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
-    const [remember, setRemember] = React.useState(false);
+    const [rememberPassword, setRememberPassword] = React.useState(false);
     const[disabled, setDisabled] = React.useState(false)
     const[error, setError] = React.useState('')
 
@@ -33,23 +33,43 @@ const Page = () => {
         <PageContainer>
             <PageTitle>Login</PageTitle>
             <PageArea>
+                {error &&
+                    <ErrorMessage>{error}</ErrorMessage>
+                }
                 <form onSubmit={handleSubmit}>
                     <label className="area">
                         <div className="area--title">E-mail</div>
                         <div className="area--input">
-                            <input type="email" disabled={disabled}/>
+                            <input 
+                                type="email"
+                                disabled={disabled}
+                                value={email}
+                                onChange={e => setEmail(e.target.value)}
+                                required
+                             />
                         </div>
                     </label>
                     <label className="area">
                         <div className="area--title">Senha</div>
                         <div className="area--input">
-                            <input type="password" disabled={disabled}/>
+                            <input 
+                                type="password" 
+                                disabled={disabled}
+                                value={password}
+                                onChange={e=>setPassword(e.target.value)}
+                                required
+                            />
                         </div>
                     </label>
                     <label className="area">
                         <div className="area--title">Lembrar Senha</div>
                         <div className="area--input">
-                            <input type="checkbox" disabled={disabled}/>
+                            <input 
+                            type="checkbox" 
+                            disabled={disabled}
+                            checked={rememberPassword}
+                            onChange={()=> setRememberPassword(!rememberPassword)}
+                            />
                         </div>
                     </label>
                     <label className="area">
