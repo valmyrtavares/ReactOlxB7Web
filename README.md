@@ -1,3 +1,2 @@
-Agora foi resolvido o erro da aula anterior faltava o useState com a aquela variável e tudo está funcionando
-Um destaque dessa aula é o uso do ErrorMessage de fato um pérola de reuso de código. Até aqui foi foi incrementado apenas o tela de login e a API está retornando por enquanto apenas uma mensagem de erro. 
-
+Aula 16 conluída com exito e tudo funcionando a API é um trabalho longo e vai precisar de repetição
+Tudo vai precisar de repetição, mas digo que essa é uma parte mais escura, com mais possibilidades de erro, foi conectado a api do b7, não sei se o ideal seria voltar e terminar a minha propria api. Honestamente não sei o que seria melhor, mas vou um pouco mais com o esse curso. Pelo mesno é q que tenho em mente por enquanto. Agora eu estou logado e preciso de uma feture de logout
