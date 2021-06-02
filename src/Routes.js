@@ -5,6 +5,7 @@ import Sobre from './pages/about'
 
 import NotFound from  './pages/NotFound'
 import SingiIn from './pages/SingIn/index'
+import SingiUp from './pages/SignUp/index'
 
 
 export default () => {
@@ -18,6 +19,9 @@ export default () => {
             </Route>
             <Route exact path="/signin">
                 <SingiIn/>
+            </Route>
+            <Route exact path="/signup">
+                <SingiUp/>
             </Route>
             <Route>
                 <NotFound/>
