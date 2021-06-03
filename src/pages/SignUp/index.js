@@ -33,15 +33,21 @@ const Page = () => {
     const handleSubmit = async (e) =>{
         e.preventDefault();
         setDisabled(true);
+        setError('');
 
-        // const json = await api.login(email, password);
+        if(password !==confirmPassword){
+            setError('Senhas não batem');
+            setDisabled(false);
+            return;
+        }
+        const json = await api.register(name, email, password, stateLoc);
 
-        // if(json.error){
-        //     setError(json.error)
-        // }else{
-        //     doLogin(json.token, rememberPassword)
-        //     window.location.href = '/';
-        // }
+        if(json.error){
+            setError(json.error)
+        }else{
+            doLogin(json.token);
+            window.location.href = '/';
+        }
 
         setDisabled(false);
     }
