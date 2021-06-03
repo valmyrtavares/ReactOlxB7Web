@@ -1,11 +1,12 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom'
-import Home from './pages/home'
-import Sobre from './pages/about'
+import {Switch, Route} from 'react-router-dom';
+import Home from './pages/home';
+import Sobre from './pages/about';
 
-import NotFound from  './pages/NotFound'
-import SingiIn from './pages/SingIn/index'
-import SingiUp from './pages/SignUp/index'
+import NotFound from  './pages/NotFound';
+import SingiIn from './pages/SingIn/index';
+import SingiUp from './pages/SignUp/index';
+import AdPage from './pages/AdPage';
 
 
 export default () => {
@@ -22,6 +23,9 @@ export default () => {
             </Route>
             <Route exact path="/signup">
                 <SingiUp/>
+            </Route>
+            <Route exact path="/ad/:id">
+                <AdPage/>
             </Route>
             <Route>
                 <NotFound/>

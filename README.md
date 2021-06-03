@@ -1,2 +1,2 @@
-Aula 23
-Foi estilizado os containers dos produtos mostrando os preços e o titulo e com uma opção de que ele mostra o preço se não for negociável, se for ele diz que o preço é negociável e aqui també um exemplo bom de hover
+Aula 24
+Processo de construção da tela individualizada de cada produto
