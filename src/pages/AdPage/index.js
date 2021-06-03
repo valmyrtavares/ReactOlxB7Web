@@ -11,7 +11,17 @@ const Page = () => {
     const { id } = useParams();
 
     const [loading, setLoading] = React.useState(true)
-    const [adInfo, setAdInfo] = React.useState(true)  
+    const [adInfo, setAdInfo] = React.useState([])  
+
+    React.useEffect(()=>{
+        const getAdInfo = async (id) => {
+            const json = await api.getAd(id, true);           
+            setAdInfo(json);            
+            setLoading(false)           
+          
+        }
+        getAdInfo();
+    },[])
 
 
     return(
@@ -25,6 +35,10 @@ const Page = () => {
                         <div className="adInfo">
                             <div className="adName">
                                 {loading && <Fake height={20}/>}
+                                {adInfo.title && 
+                                    <h2>{adInfo.title}</h2>
+                                }
+                               
                             </div>
                             <div className="adDescription">
                             {loading && <Fake height={100}/>} 
@@ -35,6 +49,7 @@ const Page = () => {
                 <div className="rightSide">
                     <div className="box box-padding">
                     {loading && <Fake height={20}/>}
+                    {}
                     </div>
                     <div className="box box-padding">
                     {loading && <Fake height={50}/>}
