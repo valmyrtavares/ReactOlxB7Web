@@ -1,2 +1,2 @@
 Aula 24
-Processo de construção da tela individualizada de cada produto
+Foi criada a tela de produto com um conteúdo fake para que ela seja exibida mesmo sem nenhuma informação, pra isso foi construido um componente fake que preenche os containers muito interessante a forma de contrução. Vale muito a pena rever essa aula. A próxmia vamos transformar esse conteudo fake em false e colocar a data verdadeira.
