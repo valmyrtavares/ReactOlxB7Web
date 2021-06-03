@@ -4,12 +4,14 @@ import useAPI from '../../helpers/OlxAPI'
 import{Link}from 'react-router-dom'
 
 import {PageContainer, } from '../../components/MainComponents';
+import AdItem from '../../components/partials/addItem'
 
 const Page = () => {
     const api = useAPI();
 
     const [stateList, setStateList] = React.useState([]);
     const [categories, setCategories] = React.useState([])
+    const [adList, setAdList] = React.useState([])
 
     React.useEffect(()=>{
         const getStates = async()=> {
@@ -27,6 +29,17 @@ const Page = () => {
         }
         getCategories();
     },[])     
+
+    React.useEffect(()=>{
+        const getRecentsAds = async()=> {
+            const json = await api.getAds({
+                sort:'desc',
+                limit:8
+            });
+            setAdList(json.ads)
+        }
+        getRecentsAds();
+    },[])    
     
     return(
         <>
@@ -58,7 +71,15 @@ const Page = () => {
             </SearchArea>
             <PageContainer>           
                 <PageArea>
-                    ...
+                    <h2>Anúncios Recentes</h2>
+                    <div className="list">
+                        {adList.map((i,k)=>
+                            <AdItem key={k} data={i}/>
+                        )}
+                    </div>
+                    <Link to="/ads" className="seeAllLinks">Ver Todos</Link>
+                    <hr/>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
                 </PageArea>
             </PageContainer>
         </>

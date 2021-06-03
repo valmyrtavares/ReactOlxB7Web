@@ -75,4 +75,19 @@ padding:20px 0;
 }
 `;
 
-export const PageArea = styled.div ``;
+export const PageArea = styled.div `
+h2 {
+    font-size:20px;
+}
+.list{
+    display:flex;
+    flex-wrap:wrap;
+}
+.seeAllLinks{
+    color:#000;
+    text-decoration:none;
+    font-weight:blod;
+    display:inline-block;
+    margin-top:10px
+}
+`;
